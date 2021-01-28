@@ -1,4 +1,4 @@
-package liuyang.crawler.jsoup;
+package liuyang.tools.crawler.jsoup;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
@@ -19,7 +19,7 @@ import java.net.URLConnection;
  * https://www.bilibili.com/video/BV1RU4y147eZ
  */
 @Slf4j
-public class Test {
+public class TestJsoup {
 
     public static final String OUTPUT_FOLDER = "d:/test/crawler/jsoup";
     public static final String URL = "https://mp.weixin.qq.com/s/jtxqf8JE0vEkLshgdYgzog";
