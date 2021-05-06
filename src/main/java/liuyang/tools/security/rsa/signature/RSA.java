@@ -1,4 +1,4 @@
-package liuyang.tools.security.rsa;
+package liuyang.tools.security.rsa.signature;
 
 import java.security.InvalidKeyException;
 import java.security.KeyFactory;
@@ -15,6 +15,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;
 
 public class RSA {
@@ -31,10 +32,12 @@ public class RSA {
 		// 发送方 ///////////////////////////////////////////////////////
 		// 1. 初始化密钥
 		KeyPairGenerator generator = KeyPairGenerator.getInstance(ALGORITHM);
-		generator.initialize(512);
+		generator.initialize(512);// 必须是64的整数倍
 		KeyPair pair = generator.generateKeyPair();
-		RSAPublicKey rsaPublicKey = (RSAPublicKey) pair.getPublic();
-		RSAPrivateKey rsaPrivateKey = (RSAPrivateKey) pair.getPrivate();
+		RSAPublicKey rsaPublicKey = (RSAPublicKey) pair.getPublic();// 公钥
+		RSAPrivateKey rsaPrivateKey = (RSAPrivateKey) pair.getPrivate();// 私钥
+		System.out.println("Public Key:" + Base64.encodeBase64String(rsaPublicKey.getEncoded()));
+		System.out.println("Private Key:" + Base64.encodeBase64String(rsaPrivateKey.getEncoded()));
 		
 		// 2. 执行签名
 		// 输入：rsaPrivateKey， SRC(待签名内容)
