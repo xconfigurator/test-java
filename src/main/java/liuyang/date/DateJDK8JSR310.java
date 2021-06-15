@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
  * 
  *         总结一下新API的统一风格： 1. 获取“现在”用now 2. 计算：plusXXX，minusXXX 3. 间隔：between
  */
-public class TestDateJDK8JSR310 {
+public class DateJDK8JSR310 {
 	public static void main(String[] args) throws InterruptedException {
 		// 1. 本地日期 LocalDate LocalTime LocalDateTime
 		System.out.println("####################################");

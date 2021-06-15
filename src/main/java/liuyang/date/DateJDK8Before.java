@@ -14,7 +14,7 @@ import java.util.Date;
  * @author liuyang
  *
  */
-public class TestDateJDK8Before {
+public class DateJDK8Before {
 	
 	public static void main(String[] args) throws ParseException {
 		System.out.println("#TestDate##############################");
@@ -66,7 +66,7 @@ public class TestDateJDK8Before {
 		buf.append(cal.get(Calendar.YEAR)).append("-");
 		buf.append(cal.get(Calendar.MONDAY) + 1).append("-");
 		buf.append(cal.get(Calendar.DAY_OF_MONTH)).append(" ");
-		buf.append(cal.get(Calendar.HOUR_OF_DAY)).append(":");
+		buf.append(cal.get(Calendar.HOUR_OF_DAY)).append(":");// 24小时
 		buf.append(cal.get(Calendar.MINUTE)).append(":");
 		buf.append(cal.get(Calendar.SECOND));
 		System.out.println(buf);
