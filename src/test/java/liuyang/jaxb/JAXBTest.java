@@ -9,6 +9,9 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 
@@ -32,7 +35,7 @@ public class JAXBTest {
 		// JAXBContext ctx = JAXBContext.newInstance(Book.class);
 		Marshaller marshaller = ctx.createMarshaller();
 		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-		marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
+		marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");// !!! 这个很重要！！！ 《================！！！！！！！！！！！！
 		
 		marshaller.marshal(book, System.out);
 	}
