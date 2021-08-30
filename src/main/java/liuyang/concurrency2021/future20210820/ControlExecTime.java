@@ -1,16 +1,15 @@
-package liuyang.concurrency2021.future;
+package liuyang.concurrency2021.future20210820;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 
-import java.sql.Time;
 import java.util.concurrent.*;
 
 /**
  * 希望方法在指定时间内返回
+ * 参考：https://blog.csdn.net/woshimyc/article/details/79369768
+ *
  * @author liuyang
  * @date 2021/8/27
  */

@@ -142,6 +142,8 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
+        <!-- Java响应式编程 -->
+        <!-- 配合视频 https://ke.qq.com/course/429389?taid=3506376941145421 -->
         <dependency>
             <groupId>io.reactivex.rxjava2</groupId>
             <artifactId>rxjava</artifactId>
