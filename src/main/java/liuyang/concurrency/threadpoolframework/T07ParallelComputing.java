@@ -9,6 +9,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
+ * 00:54:09
+ *
  * 线程池的应用——并行计算<br>
  * 需求：从1到200,000的素数<br> 
  * 思路：计算切片<br>
@@ -18,7 +20,17 @@ import java.util.concurrent.Future;
  */
 public class T07ParallelComputing {
 
-	private static final int CPU_CORE_NUM = 4;
+	/**
+	 *
+	 * AMD Ryzen 7 PRO 4750U on ThinkPad X13
+	 * 实际工作线程分配了4个的情况下。
+	 * 1 				耗时：3235ms
+	 * 4 				耗时：1142ms	耗时：1227ms	耗时：1214ms 耗时：1146ms
+	 * 6 				耗时：1054ms	耗时：1093ms	耗时：1123ms	耗时：1171ms
+	 * 8(物理内核上限)	耗时：1049ms	耗时：1135ms	耗时：1092ms	耗时：1117ms
+	 * 16(超线程)		耗时：1219ms	耗时：1198ms 耗时：1207ms 耗时：1271ms
+	 */
+	private static final int CPU_CORE_NUM = 16;
 	private static final int CALC_RANGE = 200000;
 
 	public static void main(String[] args) throws Exception {
@@ -54,11 +66,11 @@ public class T07ParallelComputing {
 		Future<List<Integer>> f4 = service.submit(t4);
 
 		long begin = System.currentTimeMillis();
-		
-		f1.get();
-		f2.get();
-		f3.get();
-		f4.get();
+
+		List<Integer> integers = f1.get();
+		List<Integer> integers1 = f2.get();
+		List<Integer> integers2 = f3.get();
+		List<Integer> integers3 = f4.get();
 		service.shutdown();
 		
 		long end = System.currentTimeMillis();

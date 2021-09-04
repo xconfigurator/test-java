@@ -7,8 +7,11 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 01:09:57
+ * 与DelayQueue相对应，可以替代Timer。<br>
  * Timer每次new一个新的线程。而ScheduledThreadPool中的线程可以复用。<br>
- * 
+ * 更强的参见Quartz。
+ *
  * @author liuyang
  *
  */
@@ -50,6 +53,7 @@ public class T10SchedulePool {
 
 	public static void main(String[] args) throws InterruptedException {
 		ScheduledExecutorService service = Executors.newScheduledThreadPool(CORE_POOL_SIZE);
+
 		service.scheduleAtFixedRate(() -> { // 以固定频率执行某个任务
 			try {
 				TimeUnit.MILLISECONDS.sleep(new Random().nextInt(1000));

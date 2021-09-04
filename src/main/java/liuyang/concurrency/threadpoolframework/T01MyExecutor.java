@@ -2,6 +2,9 @@ package liuyang.concurrency.threadpoolframework;
 
 import java.util.concurrent.Executor;
 
+/**
+ * https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/Executor.html
+ */
 public class T01MyExecutor implements Executor {
 
 	public static void main(String[] args) {

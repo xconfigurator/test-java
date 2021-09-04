@@ -8,6 +8,10 @@ import java.util.concurrent.RecursiveAction;
 import java.util.concurrent.RecursiveTask;
 
 /**
+ * 01:24:40
+ *
+ * 注：ForkJoinPool启动的是后台线程（Daemon），而FixedThreadPool等使用的就是最普通的Thread。<br>
+ *
  * 计算1000000个100以内随机整数的和
  * @author liuyang
  *
