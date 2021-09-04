@@ -1,9 +1,9 @@
-package liuyang.test;
+package liuyang.misc;
 
 import java.time.ZoneId;
 import java.util.Set;
 
-public class Hello {
+public class HelloRunnable {
 
 	public static void main(String[] args) {
 
