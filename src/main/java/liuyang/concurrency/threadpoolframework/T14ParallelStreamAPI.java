@@ -6,7 +6,7 @@ import java.util.Random;
 
 /**
  * 01:53:19
- *
+ * 课程小结： 01:56:37 快速串讲
  */
 public class T14ParallelStreamAPI {
 
