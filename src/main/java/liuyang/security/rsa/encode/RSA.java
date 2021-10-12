@@ -1,4 +1,4 @@
-package liuyang.tools.security.rsa.encode;
+package liuyang.security.rsa.encode;
 
 import org.apache.commons.codec.binary.Base64;
 
@@ -20,6 +20,10 @@ import java.security.spec.X509EncodedKeySpec;
  * @since 2021/5/6
  *
  * 参考：https://www.imooc.com/video/6280
+ *
+ * https://www.bilibili.com/video/BV1tw411f79E?p=84
+ * https://www.bilibili.com/video/BV1tw411f79E?p=85
+ *
  */
 public class RSA {
 
