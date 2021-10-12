@@ -2,6 +2,7 @@ package liuyang.test;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +10,19 @@ import org.junit.jupiter.api.Test;
  * @author liuyang
  * @date 2021/8/16
  */
+@Slf4j
 public class StringTests {
+
+
+    @Test
+    void testSplit() {
+        String omcUrl = "https://193.168.110.198:2000";
+        String ip = omcUrl.split(":")[1].replaceAll("//", "");
+        String port = omcUrl.split(":")[2];
+        log.info(ip);
+        log.info(port);
+    }
+
 
     @AllArgsConstructor
     @Getter
