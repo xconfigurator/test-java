@@ -102,7 +102,4 @@ public class DateJDK8Test {
         Date dateTomorrow = DateUtils.asDate(tomorrowLocalDateTime);
         log.info("dataTomorrow = {}", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(dateTomorrow));
     }
-
-
-
 }

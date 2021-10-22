@@ -18,6 +18,13 @@ import java.security.spec.X509EncodedKeySpec;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;
 
+/**
+ * RSA 私钥加密公钥解密的演示（签名）
+ *
+ * 私钥加密公钥解密
+ * 目的：保证身份不可伪造
+ * 解释：只有持有私钥的人才能发出消息。
+ */
 public class RSA {
 	
 	private static final String ALGORITHM = "RSA";
@@ -34,7 +41,7 @@ public class RSA {
 		KeyPairGenerator generator = KeyPairGenerator.getInstance(ALGORITHM);
 		generator.initialize(512);// 必须是64的整数倍
 		KeyPair pair = generator.generateKeyPair();
-		RSAPublicKey rsaPublicKey = (RSAPublicKey) pair.getPublic();// 公钥
+		RSAPublicKey rsaPublicKey = (RSAPublicKey) pair.getPublic();// 公钥 (注：验签时公钥的分发问题通过引入根证书来解决。实际并不是“分发”的，而是将有资质的CA的公钥固化在OS中。)
 		RSAPrivateKey rsaPrivateKey = (RSAPrivateKey) pair.getPrivate();// 私钥
 		System.out.println("Public Key:" + Base64.encodeBase64String(rsaPublicKey.getEncoded()));
 		System.out.println("Private Key:" + Base64.encodeBase64String(rsaPrivateKey.getEncoded()));
