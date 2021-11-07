@@ -9,7 +9,10 @@ import java.util.Queue;
  */
 public class HelloQueue {
 
-    private static Queue<String> q = new LinkedList<>();
+    // 连表实现
+    private static Queue<String> q = new LinkedList<>();// 实际上LinkedList implements Deque
+    // 数组实现
+    // ArrayDeque<>();
 
     public static void main(String[] args) {
         // 增
