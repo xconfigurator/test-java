@@ -1,4 +1,4 @@
-package liuyang.concurrency.ticketseller;
+package liuyang.concurrency.concurrentcontainer.ticketseller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
  * 问题引出<br>
  * 从问题暴露，逐步引入同步容器。<br>
  * 
- * 这个程序存在以下问题<br>
+ * 问题点<br>
  * 1. 有可能卖重<br>
  * 2. remove不是原子性的<br>
  * 
@@ -20,6 +20,7 @@ public class TicketSeller01ArrayList {
 
 	static List<String> tickets = new ArrayList<>();
 
+	// 库存10000张票
 	static {
 		for (int i = 0; i < 10000; i++) {// 10000张票
 			tickets.add("票编号：" + i);

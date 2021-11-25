@@ -7,10 +7,12 @@ import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 1:14:55
  * DelayQueue<br>
  * DelayQueue也是一种阻塞Queue,且无界。<br>
  * 队列中的每一个任务只有等待了一段时间之后才可以被取出。<br>
- * 
+ * 场景举例：2小时后关闭程序……
+ *
  * @author liuyang
  *
  */

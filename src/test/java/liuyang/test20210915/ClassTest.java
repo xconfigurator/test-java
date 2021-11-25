@@ -15,7 +15,7 @@ public class ClassTest {
         log.info("this.getClass().getCanonicalName() = " + this.getClass().getCanonicalName());
         log.info("this.getClass().getSimpleName() = " + this.getClass().getSimpleName());
         log.info("this.getClass().getTypeName() = " + this.getClass().getTypeName());
-        log.info("this.getClass().getPackageName() = " + this.getClass().getPackageName());
+        //log.info("this.getClass().getPackageName() = " + this.getClass().getPackageName());
     }
 
     // 大多数情况下getName和getCanonicalName没什么不同。但存在两个特例，比较一下。

@@ -5,8 +5,12 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TransferQueue;
 
 /**
+ * 1:20:40
  * 注意需要先起消费者
  * transfer() 必须有人来处理，否则阻塞。
+ * 场景举例：1:22:28 坦克大战（更高的并发的情况下 广播？）
+ * Netty中使用LinkedTransferQueue比较多。
+ *
  * @author liuyang
  *
  */

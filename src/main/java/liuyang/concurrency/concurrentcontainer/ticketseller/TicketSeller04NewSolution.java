@@ -1,4 +1,4 @@
-package liuyang.concurrency.ticketseller;
+package liuyang.concurrency.concurrentcontainer.ticketseller;
 
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -29,9 +29,19 @@ public class TicketSeller04NewSolution {
 		for (int i = 0; i < 10; i++) {// 10个售票窗口
 			new Thread(() -> {
 				String s = null;
-				while((s = tickets.poll()) != null) {// ConcurrentLinkedQueue的poll底层是CAS实现
+				while((s = tickets.poll()) != null) {// ConcurrentLinkedQueue的poll底层是CAS实现(Compare And Set)
 					System.out.println("销售了 -- " + s);
 				}
+
+				/*// 这样写也不会有问题
+				while(true) {
+					String s = tickets.poll();
+					if (s == null) {
+						break;
+					} else {
+						System.out.println("销售了 -- " + s);
+					}
+				}*/
 			}).start();
 		}
 	}

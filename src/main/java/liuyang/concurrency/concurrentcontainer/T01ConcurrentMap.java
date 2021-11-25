@@ -10,6 +10,11 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * 35:00 左右开始
+ * SkipList以及ConcurrentSkipListMap
+ * http://blog.csdn.net/sunxianghuang/article/details/52221913
+ */
 public class T01ConcurrentMap {
 
 	public static void main(String[] args) {
@@ -19,7 +24,7 @@ public class T01ConcurrentMap {
 //		map = new ConcurrentSkipListMap<>();// 83ms 86ms // 高并发且排序
 //		map = new Hashtable<>();// 50ms 45ms
 //		map = new HashMap<>();// 190ms 104ms // 可以使用Collections.synchronizedXXXX加锁
-//		map = new TreeMap<>();// 抛异常，还死机
+		//map = new TreeMap<>();// 2018 抛异常，还死机 更新：20211125 i5 9400 正常
 
 		// 测试用例
 		test(map);

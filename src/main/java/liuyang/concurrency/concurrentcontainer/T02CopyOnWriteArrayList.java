@@ -8,7 +8,12 @@ import java.util.Random;
 import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class T02CopyOnWriteList {
+/**
+ * 50:00左右
+ * CopyOnWriteArrayList, CopyOnWriteArraySet
+ * 读不加锁
+ */
+public class T02CopyOnWriteArrayList {
 
 	public static void main(String[] args) {
 		// 一堆List

@@ -1,4 +1,4 @@
-package liuyang.concurrency.singleton;
+package liuyang.concurrency.concurrentcontainer.singleton;
 
 import java.util.Arrays;
 
@@ -20,6 +20,7 @@ public class Singleton {
 
 	// 1. 构造方法私有化，不允许外部直接使用new创建对象。
 	private Singleton() {
+		System.out.println("Singleton");
 	}
 
 	// 3. 提供静态访问器。
@@ -36,6 +37,7 @@ public class Singleton {
 	
 	// 测试2
 	public static void main(String[] args) {
+		// 200个线程中都调用获取实例，预期是构造方法只调用一次。
 		Thread[] threads = new Thread[200];
 		for (int i = 0; i < threads.length; i++) {
 			threads[i] = new Thread(() -> {

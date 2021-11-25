@@ -6,6 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 1:07:00
  * 无界阻塞队列
  * 使用LinkedBlockingQueue的生产者-消费者
  * put()       BlockingQueue上，如果满了就会等待

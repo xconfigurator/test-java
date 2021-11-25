@@ -1,4 +1,4 @@
-package liuyang.concurrency.ticketseller;
+package liuyang.concurrency.concurrentcontainer.ticketseller;
 
 import java.util.Vector;
 import java.util.concurrent.TimeUnit;
@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class TicketSeller02Vector {
 
-	static Vector<String> tickets = new Vector<>();
+	static Vector<String> tickets = new Vector<>();// 同步容器，所有方法都是加锁的。
 	
 	static {
 		for (int i = 0; i < 10000; i++) {// 10000张票
@@ -34,6 +34,7 @@ public class TicketSeller02Vector {
 				while (tickets.size() > 0) {
 					
 					// 放大出问题的可能性 begin
+					// 放大了判断和操作两个操作之间的时间间隔，导致即使两个操作是加锁的，仍然会出现问题。
 					try {
 						TimeUnit.MILLISECONDS.sleep(20);
 					} catch (InterruptedException e) {
