@@ -11,6 +11,7 @@ import java.util.PriorityQueue;
 public class Hello {
 
 	public static void main(String[] args) {
+		// 进制
 		int a = 0b0000000000010101;	// 0b或0B 	二进制
 		int b = 021;				// 0		八进制
 		int c = 21;					// 默认		十进制
