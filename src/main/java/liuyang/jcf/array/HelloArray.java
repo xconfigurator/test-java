@@ -24,8 +24,8 @@ public class HelloArray {
         // Solution 3
         int[] c= new int[3];
         // Java int[] c = new int[N];
-        // C++  int* c = new int[N];
-        // C    int* c = (int *) malloc(N * sizeof(int));
+        // C++  int* c = new int[N];                        delete[] c;
+        // C    int* c = (int *) malloc(N * sizeof(int));   free(c);
         for (int i = 0; i < c.length; ++i) {
             c[i] = i + 1;
         }
