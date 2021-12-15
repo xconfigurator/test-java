@@ -6,7 +6,8 @@ import java.util.Arrays;
 public class TestFile {
     //public static final String FILE_NAME = "C:\\Users\\liuyang\\Desktop\\pdt-nms_数据库表";
     //public static final String FILE_NAME = "C:\\Users\\liuyang\\Downloads\\14.第二章物理层";
-    public static final String FILE_NAME = "F:\\liuyang_workspaces\\workspace_vscode_cpp\\test_20200428_c_cpp\\04_OJ";
+    //public static final String FILE_NAME = "F:\\liuyang_workspaces\\workspace_vscode_cpp\\test_20200428_c_cpp\\04_OJ";
+    public static final String FILE_NAME = "F:\\liuyang_workspaces\\workspace_vscode_cpp\\test_20200428_c_cpp";
 
     public static void main(String[] args) {
         //replaceNames(FILE_NAME);
@@ -38,8 +39,12 @@ public class TestFile {
                 traverseFile(f);
             } else {
                 // TODO 判断文件扩展名有问题。
-                System.out.println(f.getName());
-                cppCounter ++;
+                if (f.getName() != null
+                        && f.getName().indexOf(".") != -1
+                        && ".cpp".equalsIgnoreCase(f.getName().substring(f.getName().lastIndexOf(".")))) {
+                    System.out.println(f.getName());
+                    cppCounter++;
+                }
             }
         }
     }
