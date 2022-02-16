@@ -11,7 +11,7 @@ public class Loader05ThreadContext {
 	public static void main(String[] args) throws ClassNotFoundException {
 		ClassLoader loader = Loader05ThreadContext.class.getClassLoader();
 		System.out.println(loader);
-		
+
 		ClassLoader loader2 = Thread.currentThread().getContextClassLoader();
 		System.out.println(loader2);
 
@@ -22,7 +22,7 @@ public class Loader05ThreadContext {
 		System.out.println(Thread.currentThread().getContextClassLoader());
 		
 		// 使用前面指定的线程上下文类加载器来加载一些东西
-		Class<Loader05ThreadContext> c = (Class<Loader05ThreadContext>) Thread.currentThread().getContextClassLoader().loadClass("cn.edu.hebau.liuyang.jvm.classloader.Loader05ThreadContext");
+		Class<Loader05ThreadContext> c = (Class<Loader05ThreadContext>) Thread.currentThread().getContextClassLoader().loadClass("liuyang.jvm.classloader.Loader05ThreadContext");
 		System.out.println(c);
 		
 		// 看一下c的类加载器是谁

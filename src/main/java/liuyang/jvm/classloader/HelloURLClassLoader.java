@@ -1,4 +1,4 @@
-package liuyang.spring.essentials.reflection;
+package liuyang.jvm.classloader;
 
 import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
@@ -10,7 +10,7 @@ import java.net.URLClassLoader;
  * @author liuyang
  *
  */
-public class HelloInvokerReflection {
+public class HelloURLClassLoader {
 	
 	//private static final String CLASSURL = "file:/F:/workspaces/workspace_oxygen/TestJava/bin/";
 	//private static final String CLASSNAME = "cn.edu.hebau.liuyang.Hello";

@@ -4,7 +4,7 @@ package liuyang.jvm.classloader;
  * @author :liuyang(wx)
  * @date :2022/2/16 14:05
  */
-public class ClassLoader {
+public class HelloClassLoader {
     /**
      * bootstrap class loader
      *  implemented by native language
@@ -21,5 +21,11 @@ public class ClassLoader {
      *  SecureClassLoader
      *  URLClassLoader
      */
-
+    public static void main(String[] args) {
+        ClassLoader classLoader = HelloClassLoader.class.getClassLoader();
+        while (classLoader.getParent() != null) {
+            System.out.println(classLoader);
+            classLoader = classLoader.getParent();
+        }
+    }
 }
