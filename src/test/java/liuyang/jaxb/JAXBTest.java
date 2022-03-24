@@ -37,7 +37,7 @@ public class JAXBTest {
 		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 		marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");// !!! 这个很重要！！！ 《================！！！！！！！！！！！！
 		
-		marshaller.marshal(book, System.out);
+		marshaller.marshal(book, System.out);// core
 	}
 	
 	// 解码 XML -> Object
@@ -46,7 +46,7 @@ public class JAXBTest {
 		String xmlStr = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><book><bookName>基于Apache CXF 构建SOA应用</bookName><id>1</id><price>76.0</price></book>";
 
 		Unmarshaller unmashaller = ctx.createUnmarshaller();
-		Book book = (Book) unmashaller.unmarshal(new StringReader(xmlStr));
+		Book book = (Book) unmashaller.unmarshal(new StringReader(xmlStr));// core
 
 		System.out.println(book);
 	}

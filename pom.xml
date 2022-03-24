@@ -119,6 +119,15 @@
             </exclusions>
         </dependency>-->
 
+        <!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
+        <!-- Java响应式编程 -->
+        <!-- 配合视频 https://ke.qq.com/course/429389?taid=3506376941145421 -->
+        <dependency>
+            <groupId>io.reactivex.rxjava2</groupId>
+            <artifactId>rxjava</artifactId>
+            <version>2.2.21</version>
+        </dependency>
+
         <!-- JAXB jdk11中已经没有JAXB的api -->
         <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
         <dependency>
@@ -139,15 +148,6 @@
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-core</artifactId>
             <version>2.3.0.1</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
-        <!-- Java响应式编程 -->
-        <!-- 配合视频 https://ke.qq.com/course/429389?taid=3506376941145421 -->
-        <dependency>
-            <groupId>io.reactivex.rxjava2</groupId>
-            <artifactId>rxjava</artifactId>
-            <version>2.2.21</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
