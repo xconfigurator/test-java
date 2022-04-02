@@ -1,4 +1,4 @@
-package liuyang.a.migration.questions.test;
+package liuyang.lang;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

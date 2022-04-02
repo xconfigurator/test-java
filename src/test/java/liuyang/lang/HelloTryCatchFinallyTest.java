@@ -1,4 +1,4 @@
-package liuyang.a.migration.questions.test;
+package liuyang.lang;
 
 import liuyang.lang.HelloTryCatchFinally;
 import lombok.extern.slf4j.Slf4j;
