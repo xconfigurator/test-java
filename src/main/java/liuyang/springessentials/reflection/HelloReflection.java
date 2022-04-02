@@ -1,11 +1,11 @@
-package liuyang.spring.essentials.reflection;
+package liuyang.springessentials.reflection;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import liuyang.spring.essentials.annotation.Student;
+import liuyang.springessentials.annotation.Student;
 
 public class HelloReflection {
 

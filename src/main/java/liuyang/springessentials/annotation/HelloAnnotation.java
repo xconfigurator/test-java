@@ -1,4 +1,4 @@
-package liuyang.spring.essentials.annotation;
+package liuyang.springessentials.annotation;
 
 import java.lang.annotation.Annotation;
 

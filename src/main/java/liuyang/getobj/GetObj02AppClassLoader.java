@@ -1,6 +1,6 @@
 package liuyang.getobj;
 
-import liuyang.spring.essentials.annotation.Student;
+import liuyang.springessentials.annotation.Student;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
