@@ -13,10 +13,11 @@ public class CF0402SupplyAsync {
         T.printTimeAndThread("小白吃好了");
         T.printTimeAndThread("小白 结账、要求开发票");
 
+        // 这个写法可不太好！
         CompletableFuture<String> invoice = CompletableFuture.supplyAsync(() -> {
             // 问题：如果收款和开发票的服务员不是同一个人该怎么模拟？
             T.printTimeAndThread("服务员收款 500元");
-            T.sleepMillis(100);
+            //T.sleepMillis(1000); // 写到这里就尴尬了。
 
             CompletableFuture<String> waiter2 = CompletableFuture.supplyAsync(() -> {
                 T.printTimeAndThread("服务员开发票 面额 500元");
@@ -24,6 +25,7 @@ public class CF0402SupplyAsync {
                 return "500元发票";
             });
 
+            T.sleepMillis(1000);
             //return "500元发票";
             return waiter2.join();
         });

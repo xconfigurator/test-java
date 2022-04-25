@@ -17,11 +17,12 @@ public class CF0501ApplyToEither {
 
         CompletableFuture<String> bus = CompletableFuture.supplyAsync(() -> {
             T.printTimeAndThread("310路公交正在赶来");
-            T.sleepMillis(100);
+            T.sleepMillis(30000);
             return "310路到了";
         }).applyToEither(CompletableFuture.supplyAsync(() -> {
+            // https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/concurrent/CompletableFuture.html#applyToEither(java.util.concurrent.CompletionStage,java.util.function.Function)
             T.printTimeAndThread("325路公交正在赶来");
-            T.sleepMillis(300);
+            T.sleepMillis(10000);
             return "325路到了";
         }), firstComeBus -> firstComeBus);
 
