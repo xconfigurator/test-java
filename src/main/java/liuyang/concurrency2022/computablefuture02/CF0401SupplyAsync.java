@@ -5,6 +5,10 @@ import liuyang.concurrency2022.computablefuture.T;
 import java.util.concurrent.CompletableFuture;
 
 /**
+ * thenApply        任务后置处理
+ * applyToEither    获取最先完成的任务
+ * exceptionally    处理异常
+ *
  * @author :liuyang(wx)
  * @date :2022/2/21 10:38
  */
