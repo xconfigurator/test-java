@@ -18,7 +18,7 @@ public class LinkedBlockingQueue01 {
             blockingQueue.take();
             // 死等：       take()                     put()
             // 等一会：     poll(long, TimeUnit)       offer(E, long, TimeUnit)
-            // 一科都不等：  poll()                     offer(E)
+            // 一刻都不等：  poll()                     offer(E)
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

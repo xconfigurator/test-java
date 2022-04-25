@@ -19,6 +19,7 @@ public class CF01SupplyAsync {
         T.printTimeAndThread("小白进入餐厅");
         T.printTimeAndThread("小白点了  番茄炒蛋 + 一碗米饭");
 
+        // 关键点：异步任务的开启。
         CompletableFuture<String> cf1 = CompletableFuture.supplyAsync(() -> {// 在另一个线程执行！
             T.printTimeAndThread("厨师炒菜");
             T.sleepMillis(200);

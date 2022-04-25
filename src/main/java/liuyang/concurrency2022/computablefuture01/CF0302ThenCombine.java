@@ -21,7 +21,7 @@ public class CF0302ThenCombine {
             T.printTimeAndThread("服务员打饭");
             T.sleepMillis(200);
             return "米饭";
-        }), (dish, rice) -> {// BiFunction
+        }), (dish, rice) -> {// BiFunction // 关键点：在于异步任务的合并。
             T.printTimeAndThread("服务员打饭");
             T.sleepMillis(100);
             return String.format("%s + %s 好了", dish, rice);

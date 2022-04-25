@@ -22,7 +22,7 @@ public class CF0201SupplyAsync {
                 T.sleepMillis(200);
                 return " + 米饭";
             });
-            return "番茄炒蛋" + cf2.join();
+            return "番茄炒蛋" + cf2.join();// 演示异步任务的连接。 使用thenCompose更优雅，见CF0202ThenCompose.java
         });
 
         T.printTimeAndThread("小白在打王者");
