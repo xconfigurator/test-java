@@ -1,6 +1,6 @@
 package liuyang.concurrency2022.blockingqueue01_start;
 
-import liuyang.concurrency2022.computablefuture.T;
+import liuyang.concurrency2022.completablefuture.T;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,6 +1,6 @@
 package liuyang.concurrency2022.blockingqueue02_basic;
 
-import liuyang.concurrency2022.computablefuture.T;
+import liuyang.concurrency2022.completablefuture.T;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

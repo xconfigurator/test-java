@@ -1,4 +1,4 @@
-package liuyang.concurrency2022.computablefuture;
+package liuyang.concurrency2022.completablefuture;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

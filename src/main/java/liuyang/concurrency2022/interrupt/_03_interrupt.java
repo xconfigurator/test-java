@@ -1,6 +1,6 @@
 package liuyang.concurrency2022.interrupt;
 
-import liuyang.concurrency2022.computablefuture.T;
+import liuyang.concurrency2022.completablefuture.T;
 
 /**
  * 线程中处理中断的示例

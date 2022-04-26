@@ -1,7 +1,7 @@
-package liuyang.concurrency2022.computablefuture04_performance;
+package liuyang.concurrency2022.completablefuture04_performance;
 
-import liuyang.concurrency2022.computablefuture.Dish;
-import liuyang.concurrency2022.computablefuture.T;
+import liuyang.concurrency2022.completablefuture.Dish;
+import liuyang.concurrency2022.completablefuture.T;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.IntStream;

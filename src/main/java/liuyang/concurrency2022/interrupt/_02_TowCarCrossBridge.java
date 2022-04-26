@@ -1,6 +1,6 @@
 package liuyang.concurrency2022.interrupt;
 
-import liuyang.concurrency2022.computablefuture.T;
+import liuyang.concurrency2022.completablefuture.T;
 
 import java.util.Random;
 

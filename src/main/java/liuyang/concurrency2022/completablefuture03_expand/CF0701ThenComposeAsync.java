@@ -1,6 +1,6 @@
-package liuyang.concurrency2022.computablefuture03_expand;
+package liuyang.concurrency2022.completablefuture03_expand;
 
-import liuyang.concurrency2022.computablefuture.T;
+import liuyang.concurrency2022.completablefuture.T;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;

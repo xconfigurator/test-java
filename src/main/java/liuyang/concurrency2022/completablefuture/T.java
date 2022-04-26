@@ -1,4 +1,4 @@
-package liuyang.concurrency2022.computablefuture;
+package liuyang.concurrency2022.completablefuture;
 
 import java.util.StringJoiner;
 import java.util.concurrent.TimeUnit;
