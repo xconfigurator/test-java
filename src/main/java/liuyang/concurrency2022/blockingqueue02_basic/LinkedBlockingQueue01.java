@@ -1,9 +1,11 @@
-package liuyang.concurrency2022.blockingqueue01_start;
+package liuyang.concurrency2022.blockingqueue02_basic;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
+ * https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/concurrent/BlockingQueue.html
+ *
  * @author :liuyang(wx)
  * @date :2022/2/21 14:40
  */
