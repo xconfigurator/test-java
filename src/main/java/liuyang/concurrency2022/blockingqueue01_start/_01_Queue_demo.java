@@ -1,4 +1,4 @@
-package liuyang.concurrency2022.blockingqueue_start;
+package liuyang.concurrency2022.blockingqueue01_start;
 
 import java.util.LinkedList;
 import java.util.Queue;
