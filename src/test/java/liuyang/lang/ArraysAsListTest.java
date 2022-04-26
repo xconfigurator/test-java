@@ -1,4 +1,4 @@
-package liuyang;
+package liuyang.lang;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,7 @@ import java.util.List;
  * @date :2022/4/6 13:41
  */
 @Slf4j
-public class TempTest {
+public class ArraysAsListTest {
 
     @Test
     void test() {
