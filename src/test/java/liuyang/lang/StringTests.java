@@ -11,7 +11,55 @@ import org.junit.jupiter.api.Test;
  */
 @Slf4j
 public class StringTests {
+    @Test
+    void test202204271557() {
+        // /pdt-nms/ws/AlmReportService
+        //String appPrefix = "pdt-nms";
+        /*String appName = "";
+        String requestURI = "/pdt-nms/ws/AlmReportService";
 
+        int beginIndex = 0;
+        if (appName == null || "".equals(appName.trim())) {
+            beginIndex = 0;
+        } else {
+            beginIndex = requestURI.indexOf("/" + appName) + appName.length() + 1;
+        }
+
+        log.info(requestURI.substring(beginIndex));*/
+
+        log.info(getSubPath("pdt-nms", "/pdt-nms/ws/AlmReportService"));
+        log.info(getSubPath(null, null));
+        log.info(getSubPath("", null));
+        log.info(getSubPath("", ""));
+        log.info(getSubPath("", "/pdt-nms/ws/AlmReportService"));
+
+    }
+
+    /**
+     * 例：
+     * 输入
+     *  appName = pdt-nms
+     *  requestURI = /pdt-nms/ws/AlmReportService
+     * 返回
+     *  /ws/AlmReportService
+     *
+     * @param appName
+     * @param requestURI
+     * @return
+     */
+    private String getSubPath(String appName, String requestURI) {
+        if (null == requestURI || "".equals(requestURI.trim())) return requestURI;
+
+        // 计算子串开始位置
+        int beginIndex = 0;
+        if (appName == null || "".equals(appName.trim())) {
+            beginIndex = 0;
+        } else {
+            beginIndex = requestURI.indexOf("/" + appName) + appName.length() + 1;
+        }
+
+        return requestURI.substring(beginIndex);
+    }
 
     @Test
     void testSplit() {
