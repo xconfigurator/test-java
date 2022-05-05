@@ -6,8 +6,8 @@ import java.util.concurrent.CompletableFuture;
 
 /**
  * supplyAsync  开启一个异步任务
- * thenCompose  连接
- * thenCombine  合并(结果由BiFunctino返回)
+ * thenCompose  连接(结果由第二个函数返回)
+ * thenCombine  合并(结果由第三个函数：BiFunction返回)
  *
  * 总结（CF01, CF02, CF03）：在视频12:30处，可以多看。
  *

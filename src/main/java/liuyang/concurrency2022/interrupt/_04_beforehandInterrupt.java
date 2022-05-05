@@ -12,7 +12,7 @@ public class _04_beforehandInterrupt {
 
         try {
             T.printTimeAndThread("开始睡眠");// 省掉了睡眠
-            Thread.sleep(1000);// 省掉了睡眠
+            Thread.sleep(1000);// 省掉了睡眠， 因为在前面有中断信号。
         } catch (InterruptedException e) {
             //throw new RuntimeException(e);
             T.printTimeAndThread("发生中断");

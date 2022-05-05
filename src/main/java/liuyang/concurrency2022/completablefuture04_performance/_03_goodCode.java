@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 public class _03_goodCode {
     public static void main(String[] args) {
         // 试着调整线程池线程数 begin
-        System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "12");// 竟然管用！！
+        System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "12");// 竟然管用！！ 因为任务耗时的部分是sleep。
         // 试着调整线程池线程数 end
 
         T.printTimeAndThread("小白和小伙伴们 进餐厅点菜");

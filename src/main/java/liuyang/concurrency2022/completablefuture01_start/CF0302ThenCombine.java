@@ -18,7 +18,7 @@ public class CF0302ThenCombine {
             T.sleepMillis(200);
             return "番茄炒蛋";
         }).thenCombine(CompletableFuture.supplyAsync(() -> {// thenCombine把上个任务和这个任务一起执行
-            T.printTimeAndThread("服务员打饭");
+            T.printTimeAndThread("服务员蒸饭");
             T.sleepMillis(200);
             return "米饭";
         }), (dish, rice) -> {// BiFunction // 关键点：在于异步任务的合并。
