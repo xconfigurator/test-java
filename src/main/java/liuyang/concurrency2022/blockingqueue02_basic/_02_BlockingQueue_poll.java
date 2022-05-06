@@ -24,6 +24,7 @@ public class _02_BlockingQueue_poll {
             try {
                 //String shaobing = shaobingQueue.take();
                 String shaobing = shaobingQueue.poll(2, TimeUnit.SECONDS);// 最多等2秒。
+                // 注意这样是有可能取到null的。建议明确对返回值进行判断！参考：_03_BlockingQueue_poll_return
                 T.printTimeAndThread("路人甲 买到了烧饼: " + shaobing);// 1650937195858		14		Thread-1		路人甲 买到了烧饼: null
             } catch (InterruptedException e) {
                 T.printTimeAndThread("路人甲 被中断" + e.getMessage());
