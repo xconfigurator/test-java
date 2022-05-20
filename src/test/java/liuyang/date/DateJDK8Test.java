@@ -8,31 +8,52 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.Date;
+import java.util.Locale;
 
 /**
+ * 可参考文档：
+ * https://www.jianshu.com/p/048ee8580639
+ *
  * @author liuyang
  * @date 2021/8/10
  */
 @Slf4j
 public class DateJDK8Test {
 
+
+    @Test
+    void test202205201321() {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.CHINESE);
+        log.info(dtf.format(LocalDateTime.now()));
+    }
+
+    @Test
+    void test20220201319() {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        // LocalDateTime -> String
+        log.info(dtf.format(LocalDateTime.now()));
+    }
+
+    // 时间差值
     @Test
     void test202205201102() throws ParseException {
-        // 也许不好，但能用
+        // type1: 也许不好，但能用
         // 日期间隔
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date dateBegin = sdf.parse("2014-02-22 07:01:01");
         Date dateEnd = new Date();
-
         long days = Duration.between(DateUtils.asLocalDateTime(dateBegin), DateUtils.asLocalDateTime(dateEnd)).toDays();
         log.info("days = {}", days);
 
-        // 没搞定
-        //DateTimeFormatter std = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        //Duration.between(std.parse("")., std.parse(""));
+        // type2: 推荐
+        // 参考：https://www.jianshu.com/p/048ee8580639
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime ldtBegin = LocalDateTime.parse("2014-02-22 07:01:01", dtf);// String -> LocalDateTime
+        long days2 = Duration.between(ldtBegin, LocalDateTime.now()).toDays();
+        log.info("days = {}", days2);
     }
-
 
     @Test
     void test202109261319() {
