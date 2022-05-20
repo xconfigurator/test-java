@@ -4,11 +4,9 @@ import liuyang.date.utils.DateUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.ZoneId;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
@@ -18,6 +16,23 @@ import java.util.Date;
  */
 @Slf4j
 public class DateJDK8Test {
+
+    @Test
+    void test202205201102() throws ParseException {
+        // 也许不好，但能用
+        // 日期间隔
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date dateBegin = sdf.parse("2014-02-22 07:01:01");
+        Date dateEnd = new Date();
+
+        long days = Duration.between(DateUtils.asLocalDateTime(dateBegin), DateUtils.asLocalDateTime(dateEnd)).toDays();
+        log.info("days = {}", days);
+
+        // 没搞定
+        //DateTimeFormatter std = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        //Duration.between(std.parse("")., std.parse(""));
+    }
+
 
     @Test
     void test202109261319() {
