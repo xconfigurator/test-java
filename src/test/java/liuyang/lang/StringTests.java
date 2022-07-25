@@ -3,7 +3,10 @@ package liuyang.lang;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
+
+import java.util.regex.Pattern;
 
 /**
  * @author liuyang
@@ -11,6 +14,17 @@ import org.junit.jupiter.api.Test;
  */
 @Slf4j
 public class StringTests {
+
+    @Test
+    void test202207251101() {
+        Pattern PATTERN_All_ENODEB = Pattern.compile("\\d_\\d");
+        if (!PATTERN_All_ENODEB.matcher("1_").matches()) {
+            log.info("dismatch");
+        } else {
+            log.info("match");
+        }
+    }
+
     @Test
     void test202204271557() {
         // /pdt-nms/ws/AlmReportService
