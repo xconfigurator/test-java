@@ -32,11 +32,18 @@ class ListTest {
 
     @Test
     void testRandom() {
+        final int UPPER_BOUND = 10;
+
         List<Integer> data = new LinkedList<>();
         for (int i = 0; i < 10000000; ++i) {
-            data.add(random.nextInt(10));// 0 ~ 9
-            //data.add((int) random.nextInt(10) + 1);// 1 ~ 10
+            // [0, 10) 0 ~ 9
+            //data.add(random.nextInt(UPPER_BOUND));
+            // (0, 10] 1 ~ 10
+            //data.add((int) random.nextInt(UPPER_BOUND) + 1);
+            // [0, 10] 0 ~ 10
+            data.add((int) random.nextInt(UPPER_BOUND + 1));
         }
+
         log.info("max = {}", Collections.max(data));
         log.info("min = {}", Collections.min(data));
     }
