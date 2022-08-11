@@ -64,7 +64,7 @@ class BigDecimalTest {
     @Test
     void genMocLLAdnCorrespondingXYToExcel() {
         final int DATA_NUM = 10000;
-        final String FILE_WRITE = "E:\\data_" + DATA_NUM + "points_BigDecimal_Uniformly" + System.currentTimeMillis() +".xlsx";
+        final String FILE_WRITE = "E:\\data_" + DATA_NUM + "points_BigDecimal_Gaussian_" + System.currentTimeMillis() +".xlsx";
 
         List<LongitudeLatitudeBigDecimalDO> list = new LinkedList<>();
         for (int i = 0; i < DATA_NUM; ++i) {
