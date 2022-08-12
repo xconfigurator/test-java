@@ -11,6 +11,6 @@ import org.junit.jupiter.api.Test;
 public class GitHubTest {
     @Test
     void test() {
-        log.info("hei");
+        log.info("hei 修改一下再提交试一下");
     }
 }
