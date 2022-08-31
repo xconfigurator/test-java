@@ -1,14 +1,16 @@
 package liuyang.lang;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 /**
  * @author liuyang
  * @date 2021/8/26
  */
-@Slf4j
 public class HelloTryCatchFinally {
-    public static boolean testProcedureNormal() {
+    private static final Logger log = LoggerFactory.getLogger(HelloTryCatchFinally.class);
+    public static boolean testFunctionNormal() {
         boolean flag = true;
         try {
             flag = true;
@@ -20,9 +22,10 @@ public class HelloTryCatchFinally {
         } finally {
             log.debug("Response = " + flag);
         }
+        //log.info("try/catch之后");// unreachable 因为return
     }
 
-    public static boolean testPeocedureAbnormal () {
+    public static boolean testFunctionAbnormal() {
         boolean flag = true;
         try {
             throw new RuntimeException("故意的");
@@ -33,5 +36,42 @@ public class HelloTryCatchFinally {
         } finally {
             log.debug("Response = " + flag);
         }
+        //log.info("try/catch之后");// unreachable 因为return
     }
+
+    /*
+    public static boolean testProcedureNormal() {
+        try {
+        } catch (Exception e) {
+            log.error(e.getMessage(), e);
+        } finally {
+            log.debug("Response = " + flag);
+        }
+        log.info("try/catch之后");// unreachable
+    }
+    */
+
+    public static void testProcedureNormal() {
+        try {
+            log.info("try");
+        } catch (Exception e) {
+            log.info("catch");
+        } finally {
+            log.info("finally");
+        }
+        log.info("after try/catch block");
+    }
+
+    public static void testProcedureAbnormal() {
+        try {
+            log.info("try 中抛异常");
+            throw new RuntimeException("还是故意的");
+        } catch (Exception e) {
+            log.info("catch");
+        } finally {
+            log.info("finally");
+        }
+        log.info("after try/catch block");
+    }
+
 }

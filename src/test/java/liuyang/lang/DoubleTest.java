@@ -3,7 +3,6 @@ package liuyang.lang;
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.support.ExcelTypeEnum;
 import liuyang.tools.excel.easyexcel202208111703.LongitudeLatitudeDoubleDO;
-import liuyang.tools.excel.easyexcel202208111703.LongitudeLatitudeFloatDO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
@@ -39,30 +38,30 @@ class DoubleTest {
     (24.48,0)(114.3567149112,38.0555184113)
      */
     // 经纬度
-    final static double northeastLongitude = 114.3567149112f;
-    final static double northeastLatitude = 38.0556604113f;
+    final static double northeastLongitude = 114.3567149112;
+    final static double northeastLatitude = 38.0556604113;
 
-    final static double northwestLongitude = 114.356994912f;
-    final static double northwestLatitude = 38.0556604113f;
+    final static double northwestLongitude = 114.356994912;
+    final static double northwestLatitude = 38.0556604113;
 
-    final static double southeastLongitude = 114.3567149112f;
-    final static double southeastLatitude = 38.055174113f;
+    final static double southeastLongitude = 114.3567149112;
+    final static double southeastLatitude = 38.055174113;
 
-    final static double southwestLongitude = 114.356994912f;
-    final static double southwestLatitude = 38.055174113f;
+    final static double southwestLongitude = 114.356994912;
+    final static double southwestLatitude = 38.055174113;
 
     // 坐标轴（原定定在了西南）
-    final static double northeastX = 24.54f;
-    final static double northeastY = 15.54f;
+    final static double northeastX = 24.54;
+    final static double northeastY = 15.54;
 
-    final static double northwestX = 0.05f;
-    final static double northwestY = 15.5f;
+    final static double northwestX = 0.05;
+    final static double northwestY = 15.5;
 
-    final static double southeastX = 24.43f;
-    final static double southeastY = 0.06f;
+    final static double southeastX = 24.43;
+    final static double southeastY = 0.06;
 
-    final static double southwestX = 0.05f;
-    final static double southwestY = 0.06f;
+    final static double southwestX = 0.05;
+    final static double southwestY = 0.06;
 
     @Test
     void genMocLLAdnCorrespondingXYToExcel() {

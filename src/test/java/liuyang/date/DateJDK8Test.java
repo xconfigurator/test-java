@@ -22,6 +22,31 @@ import java.util.Locale;
 @Slf4j
 public class DateJDK8Test {
 
+    @Test
+    void test202208312322() {
+        // 需要获得java.util.Date实例相对当前凌晨的差值(毫秒数)
+        Date date = new Date();
+        LocalDateTime now =  Instant
+                .ofEpochMilli(date.getTime()).atZone(ZoneId.systemDefault())
+                .toLocalDateTime();
+        LocalDateTime today0am = now.withHour(0).withMinute(0).withSecond(0).withNano(0);
+        log.info("now = {}", now);// e.g. 23:35:10.909 [main] INFO liuyang.date.DateJDK8Test - now = 2022-08-31T23:35:10.903
+        log.info("today0am = {}", today0am);// e.g. 23:35:10.911 [main] INFO liuyang.date.DateJDK8Test - today0am = 2022-08-31T00:00
+        long nowMilli = now.toInstant(ZoneOffset.of("+8")).toEpochMilli();
+        long today0amMilli = today0am.toInstant(ZoneOffset.of("+8")).toEpochMilli();
+        long delta = nowMilli - today0amMilli;
+        log.info("delta       = {}", delta);
+
+        // 一天的总毫秒数
+        log.info("一天的总毫秒数 = {}", 24 * 3600 * 1000);
+        /*
+        // 输出示例
+        23:52:42.183 [main] INFO liuyang.date.DateJDK8Test - now = 2022-08-31T23:52:42.176
+        23:52:42.186 [main] INFO liuyang.date.DateJDK8Test - today0am = 2022-08-31T00:00
+        23:52:42.186 [main] INFO liuyang.date.DateJDK8Test - delta       = 85962176
+        23:52:42.186 [main] INFO liuyang.date.DateJDK8Test - 一天的总毫秒数 = 86400000
+         */
+    }
 
     @Test
     void test202205201321() {

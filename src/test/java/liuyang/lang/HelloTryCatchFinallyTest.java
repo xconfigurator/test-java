@@ -1,6 +1,5 @@
 package liuyang.lang;
 
-import liuyang.lang.HelloTryCatchFinally;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
@@ -12,11 +11,20 @@ import org.junit.jupiter.api.Test;
 public class HelloTryCatchFinallyTest {
     @Test
     void testNormal() {
-        log.info("caller resp = {}", HelloTryCatchFinally.testProcedureNormal());
+        log.info("caller resp = {}", HelloTryCatchFinally.testFunctionNormal());
     }
 
     @Test
     void testAbnormal() {
-        log.info("caller resp = {}", HelloTryCatchFinally.testPeocedureAbnormal());
+        log.info("caller resp = {}", HelloTryCatchFinally.testFunctionAbnormal());
+    }
+
+    @Test
+    void testNoramlProcecure() {
+        HelloTryCatchFinally.testProcedureNormal();
+    }
+    @Test
+    void testAbnromalProcedure() {
+        HelloTryCatchFinally.testProcedureAbnormal();
     }
 }

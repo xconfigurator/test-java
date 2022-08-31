@@ -16,6 +16,12 @@ import java.util.regex.Pattern;
 public class StringTests {
 
     @Test
+    void test202208181917() {
+        String str = "hello";
+        log.info("{}", str.getClass());
+    }
+
+    @Test
     void test202207251101() {
         Pattern PATTERN_All_ENODEB = Pattern.compile("\\d_\\d");
         if (!PATTERN_All_ENODEB.matcher("1_").matches()) {
