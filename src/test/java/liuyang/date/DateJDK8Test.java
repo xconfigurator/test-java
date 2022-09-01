@@ -37,6 +37,9 @@ public class DateJDK8Test {
         long delta = nowMilli - today0amMilli;
         log.info("delta       = {}", delta);
 
+        int deltaInt = Long.valueOf(delta).intValue();
+        log.info("deltaInt    = {}", deltaInt);
+
         // 一天的总毫秒数
         log.info("一天的总毫秒数 = {}", 24 * 3600 * 1000);
         /*
@@ -45,6 +48,13 @@ public class DateJDK8Test {
         23:52:42.186 [main] INFO liuyang.date.DateJDK8Test - today0am = 2022-08-31T00:00
         23:52:42.186 [main] INFO liuyang.date.DateJDK8Test - delta       = 85962176
         23:52:42.186 [main] INFO liuyang.date.DateJDK8Test - 一天的总毫秒数 = 86400000
+         */
+        /*
+        06:49:17.566 [main] INFO liuyang.date.DateJDK8Test - now = 2022-09-01T06:49:17.560
+        06:49:17.568 [main] INFO liuyang.date.DateJDK8Test - today0am = 2022-09-01T00:00
+        06:49:17.568 [main] INFO liuyang.date.DateJDK8Test - delta       = 24557560
+        06:49:17.569 [main] INFO liuyang.date.DateJDK8Test - deltaInt    = 24557560
+        06:49:17.569 [main] INFO liuyang.date.DateJDK8Test - 一天的总毫秒数 = 86400000
          */
     }
 

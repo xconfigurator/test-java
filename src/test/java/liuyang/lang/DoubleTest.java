@@ -63,6 +63,23 @@ class DoubleTest {
     final static double southwestX = 0.05;
     final static double southwestY = 0.06;
 
+    // UWB
+    /*
+    UWB设备：
+    (0,0)(114.3569949112,38.0555174113)
+    (24.48,0)(114.3567149112,38.0555184113)
+     */
+    final static double uwbALongitude = 114.3569949112;
+    final static double uwbALatitude = 38.0555174113;
+    final static double uwbBLongitude = 114.3567149112;
+    final static double uwbBLatitude = 38.0555184113;
+
+    final static double uwbAX = 0.0;
+    final static double uwbAY = 0.0;
+    final static double uwbBX = 24.48;
+    final static double uwbBY = 0.0;
+
+
     @Test
     void genMocLLAdnCorrespondingXYToExcel() {
         final int DATA_NUM = 10000;
