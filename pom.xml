@@ -163,5 +163,21 @@
             <artifactId>easyexcel</artifactId>
             <version>2.2.7</version>
         </dependency>
+
+        <!-- bean validation begin 20230215 -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.23.Final</version>
+        </dependency>
+        <!-- el 用于解析messages中的表达式 -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-el</artifactId>
+            <version>9.0.29</version>
+        </dependency>
+        <!-- bean validation end 20230215 -->
+
     </dependencies>
 </project>

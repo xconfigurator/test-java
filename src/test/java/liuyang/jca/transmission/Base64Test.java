@@ -15,7 +15,8 @@ public class Base64Test {
 
     //public static final String src = "foo";
     //public static final String src = "imooc security base64";
-    public static final String src = "eric:han";
+    //public static final String src = "eric:han";
+    public static final String src = "zhangsan:zhangsan";
     public static final String ENCODING = "UTF-8";
 
     @Test
