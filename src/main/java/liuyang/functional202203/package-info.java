@@ -1,7 +1,7 @@
 /**
  * 测试代码在test对应目录下。
  * 代码为从imooc上下载的作者示例
- * 突然发现，依赖挺多。见test-spring-boot-env吧。
+ * 突然发现，依赖挺多。见test-spring-boot-env吧。 放在了src/test/java/liuyang/testspringbootenv/modules/jdk/stream
  *
  * imooc接灰的电子产品 (讲得很好，重点做笔记)
  * https://www.imooc.com/learn/1284
