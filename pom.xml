@@ -179,5 +179,18 @@
         </dependency>
         <!-- bean validation end 20230215 -->
 
+        <!-- zookeeper begin 20231003 -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        <!-- zookeeper end 20231003 -->
+
     </dependencies>
 </project>
