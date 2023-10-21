@@ -13,6 +13,24 @@ import java.util.List;
 @Slf4j
 public class ArraysAsListTest {
 
+    @Test
+    void test202310201402() {
+        List<Double> list = Arrays.asList(1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0);
+        //String tmp = "1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10 11 12 13 14 15";
+        //System.out.println(tmp.replaceAll(" ", ","));
+        log.info("sum = {}", list.stream().mapToDouble(d -> d).sum());
+        log.info("avg = {}", list.stream().mapToDouble(d -> d).average());
+    }
+
+    @Test
+    void test202310171811() {
+        int a[] = {1, 2, 3};
+        log.info("a = {}", a);
+        for (int i : a) {
+            System.out.println(i);
+        }
+    }
+
     // List的下标是从0开始还是从1开始
     @Test
     void test202212071835() {
