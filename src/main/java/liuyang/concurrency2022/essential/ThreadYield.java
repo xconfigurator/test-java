@@ -28,7 +28,8 @@ public class ThreadYield {
         public void run() {
             for (int i = 0; i < 10; i++) {
                 System.out.println(Thread.currentThread().getName() + " : " + i);
-                yield();// yield是thread的方法。貌似拿Runnable接口不好整
+                // 202310312038 JDK 11正常，但切换为JDK 17报错，暂时注释掉。
+                //yield();// yield是thread的方法。貌似拿Runnable接口不好整
             }
         }
     }
