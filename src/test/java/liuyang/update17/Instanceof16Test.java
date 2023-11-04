@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
  * @since 2023/11/3
  */
 @Slf4j
-public class InstanceofTest {
+public class Instanceof16Test {
 
     @DisplayName("JDK14+")
     @Test
