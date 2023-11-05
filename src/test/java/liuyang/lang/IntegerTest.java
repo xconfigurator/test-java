@@ -10,6 +10,30 @@ import org.junit.jupiter.api.Test;
 @Slf4j
 public class IntegerTest {
 
+    @Test
+    void test202310251616() {
+        log.info("{}", Long.parseLong("c0397339", 16));// 5678 * 5678
+        log.info("{}", Integer.toBinaryString(5678));
+        log.info("{}", Long.parseLong(Integer.toBinaryString(5678)));
+        System.out.printf("%016d\n", Long.parseLong(Integer.toBinaryString(5678)));
+        System.out.printf("%032d\n", Long.parseLong(Integer.toBinaryString(5678)));
+    }
+
+    @Test
+    void test202310251516() {
+        int i, j, k;
+        //i = 10;
+        //log.info("{}, {}, {}", i, j, k);// 编译的时候报错： Variable 'i' might not have been initialized
+    }
+
+    @Test
+    void test202310241541() {
+        System.out.println(Integer.toBinaryString(300));
+        System.out.println(Integer.toOctalString(300));
+        System.out.println(Integer.toHexString(300));
+    }
+
+
     /**
      * 16 -> 2
      */

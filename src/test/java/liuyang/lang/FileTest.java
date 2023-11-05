@@ -9,7 +9,7 @@ import java.util.Arrays;
  */
 public class FileTest {
 
-    private static final String FOLDER_PATH = "F:\\liuyang\\Windows 聚焦\\rename\\20230510";
+    private static final String FOLDER_PATH = "F:\\liuyang\\Windows 聚焦\\rename\\20231028";
 
     public static void main(String[] args) {
         File folder = new File(FOLDER_PATH);

@@ -1,17 +1,22 @@
-package liuyang.functional202302.demo01;
+package liuyang.functional202310;
 
-import java.sql.SQLOutput;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Optional;
 import java.util.stream.Stream;
 
 /**
  * @author xconf
- * @since 2023/2/23
+ * @since 2023/10/31
  */
-public class Foo {
-    public static void main(String[] args) {
+@Slf4j
+public class F001Test {
+
+    @Test
+    void test202310312008Hello() {
+        // 202302写的，耽误了，今天继续。删除原来的包。
         int[] arr = {1 ,2 ,3 };
         Integer max = Collections.max(Arrays.asList(1, 2, 3));
         System.out.println(max);

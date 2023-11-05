@@ -14,7 +14,7 @@ public class HelloScriptEngine {
 	public static void main(String[] args) throws ScriptException, NoSuchMethodException, IOException {
 		// 获取脚本引擎对象
 		ScriptEngineManager sem = new ScriptEngineManager();
-		ScriptEngine engine = sem.getEngineByName("javascript");
+		ScriptEngine engine = sem.getEngineByName("javascript");// JDK 8 ok  JDK 17 已经删除。 202311010206
 		
 		
 		System.out.println("#简单使用###############################################");
