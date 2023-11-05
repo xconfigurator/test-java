@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class CIOTestCases {
+public class IOTest {
 	
 	private final String FILE_PATH = "F:\\workspaces\\workspace_oxygen/TestJavaExtension/src/main/collections/cn/edu/hebau/liuyang/collection/commons/CIOTestCases.java";
 	private final String FOLDER_PATH = "F:\\workspaces\\workspace_oxygen/TestJavaExtension/src";
