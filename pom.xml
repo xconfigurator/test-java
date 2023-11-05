@@ -92,6 +92,13 @@
         </dependency>
 
         <!-- Apache Commons begin ///////////////////////////////////////////////////////-->
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -112,22 +119,50 @@
             <artifactId>commons-math3</artifactId>
             <version>3.6.1</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
-        </dependency>
         <!-- Apache Commons begin ///////////////////////////////////////////////////////-->
 
         <!-- Guava begin ///////////////////////////////////////////////////////////////-->
+        <!--
+        Joiner/Splitter
+        Lists
+        Ints
+        Multiset
+        HashMultimap
+        ImmutableList
+        Preconditions
+        -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>29.0-jre</version>
         </dependency>
         <!-- Guava end /////////////////////////////////////////////////////////////////-->
+
+        <!-- Spring Framework 工具类 begin //////////////////////////////////////////////-->
+        <!--
+         org.springframework.util.ClassUtils
+         org.springframework.util.ReflectionUtils
+         org.springframework.util.FileCopyUtils
+         org.springframework.core.GenericTypeResolver
+        -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.3.30</version>
+        </dependency>
+
+        <!--
+        org.springframework.beans.BeanUtils
+        -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.3.30</version>
+        </dependency>
+
+        <!-- Spring Framework 工具类 end ////////////////////////////////////////////////-->
 
         <!-- 加密解密 begin /////////////////////////////////////////////////////-->
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
