@@ -3,7 +3,6 @@ package liuyang.lang;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import java.util.regex.Pattern;
@@ -13,7 +12,7 @@ import java.util.regex.Pattern;
  * @date 2021/8/16
  */
 @Slf4j
-public class StringTests {
+public class String20210806Test {
 
     @Test
     void test202208181917() {
