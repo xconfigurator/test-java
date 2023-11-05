@@ -17,7 +17,17 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.16</version>
+            <!--
+                【异常】
+                20231105
+                升级JDK17后运行functionl202203包下的示例 java: Lombok visitor handler class lombok.javac.handlers.HandleVal failed: java.lang.NoSuchMethodError: 'boolean com.sun.tools.javac.code.Symbol$TypeSymbol.isLocal()'
+                【参考】
+                https://blog.csdn.net/qq_24313643/article/details/117409920
+                【处理】
+                升级lombok版本。实测升级后故障解除！
+            -->
+            <!--<version>1.18.16</version>-->
+            <version>1.18.24</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
         <dependency>
@@ -111,6 +121,12 @@
             <version>5.7.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.7.2</version>
+            <scope>test</scope>
+        </dependency>
 
         <!-- JUnit 5 兼容JUnit4 -->
         <!--<dependency>
@@ -198,5 +214,12 @@
             <version>4.0.1</version>
         </dependency>
         <!-- zookeeper end 20231003 -->
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
     </dependencies>
 </project>
