@@ -1,4 +1,4 @@
-package liuyang.functional202203;
+package liuyang.functional202203.outline;
 
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
