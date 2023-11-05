@@ -91,6 +91,14 @@
             <version>2.2.2</version>
         </dependency>
 
+        <!-- https://gitee.com/dromara/hutool -->
+        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.22</version>
+        </dependency>
+
         <!-- Apache Commons begin ///////////////////////////////////////////////////////-->
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
