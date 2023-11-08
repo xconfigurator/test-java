@@ -1,5 +1,6 @@
-package liuyang.zookeeper;
+package liuyang.tools.zookeeper;
 
+import liuyang.tools.zookeeper.ZooKeeperUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.zookeeper.CreateMode;

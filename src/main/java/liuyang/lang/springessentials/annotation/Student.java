@@ -1,4 +1,4 @@
-package liuyang.springessentials.annotation;
+package liuyang.lang.springessentials.annotation;
 
 @Entity("student")
 public class Student {

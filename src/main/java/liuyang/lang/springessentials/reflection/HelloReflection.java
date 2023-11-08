@@ -1,15 +1,15 @@
-package liuyang.springessentials.reflection;
+package liuyang.lang.springessentials.reflection;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import liuyang.springessentials.annotation.Student;
+import liuyang.lang.springessentials.annotation.Student;
 
 public class HelloReflection {
 
-	private static final String CLASS = "liuyang.spring.essentials.annotation.Student";
+	private static final String CLASS = "liuyang.lang.springessentials.annotation.Student";
 	
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
 		Class<Student> clazz = (Class<Student>) Class.forName(CLASS);

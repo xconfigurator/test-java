@@ -1,4 +1,4 @@
-package liuyang.zookeeper;
+package liuyang.tools.zookeeper;
 
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;

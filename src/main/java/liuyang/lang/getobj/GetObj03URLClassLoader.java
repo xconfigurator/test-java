@@ -1,4 +1,4 @@
-package liuyang.getobj;
+package liuyang.lang.getobj;
 
 import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;

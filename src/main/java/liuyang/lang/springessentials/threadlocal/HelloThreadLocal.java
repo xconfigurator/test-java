@@ -1,4 +1,4 @@
-package liuyang.springessentials.threadlocal;
+package liuyang.lang.springessentials.threadlocal;
 
 public class HelloThreadLocal {
 

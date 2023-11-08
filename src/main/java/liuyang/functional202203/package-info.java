@@ -19,4 +19,4 @@
  *  flatMap
  *  reduce
  */
-package liuyang.lang.functional2022;
+package liuyang.functional202203;

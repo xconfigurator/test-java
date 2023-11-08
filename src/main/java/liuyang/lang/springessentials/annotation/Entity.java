@@ -1,4 +1,4 @@
-package liuyang.springessentials.annotation;
+package liuyang.lang.springessentials.annotation;
 
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;

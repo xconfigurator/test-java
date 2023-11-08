@@ -3,4 +3,4 @@
  * "极限的N种求法"
  * ……
  */
-package liuyang.getobj;
+package liuyang.lang.getobj;

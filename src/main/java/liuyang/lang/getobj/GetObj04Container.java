@@ -1,4 +1,4 @@
-package liuyang.getobj;
+package liuyang.lang.getobj;
 
 /**
  * @author :liuyang(wx)
