@@ -57,6 +57,7 @@ public class CollectionsTest {
     void test202311091921() {
         List<Integer> list = IntStream.rangeClosed(1, 20).boxed().collect(Collectors.toList());
         log.info("max\t{}", Collections.max(list));
+        // 注意：二分查找之前要先排序！！
         log.info("binarySearch\t{}", Collections.binarySearch(list, 10));
         log.info("binarySearch\t{}", Collections.binarySearch(list, 55));
         log.info("frequency of 2 = \t{}", Collections.frequency(list, 2));
