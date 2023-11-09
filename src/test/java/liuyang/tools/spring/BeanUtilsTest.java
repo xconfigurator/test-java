@@ -1,6 +1,6 @@
 package liuyang.tools.spring;
 
-import liuyang.lang.springessentials.annotation.Student;
+import liuyang.essentials.springessentials.annotation.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.BeanUtils;
