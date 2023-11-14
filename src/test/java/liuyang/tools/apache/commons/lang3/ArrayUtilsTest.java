@@ -11,7 +11,7 @@ import java.util.Arrays;
 /**
  * https://www.bilibili.com/video/BV1Lv411P7Ua/?p=2&spm_id_from=pageDriver&vd_source=8bd7b24b38e3e12c558d839b352b32f4
  * 31:30
- *
+ * https://commons.apache.org/proper/commons-lang/javadocs/api-release/index.html
  * @author xconf
  * @since 2023/11/8
  */
