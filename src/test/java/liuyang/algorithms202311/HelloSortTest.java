@@ -1,12 +1,14 @@
 package liuyang.algorithms202311;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.ArrayUtils;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -54,6 +56,17 @@ public class HelloSortTest {
         log.info("排序前：{}", Arrays.toString(array));
         Arrays.sort(array);
         log.info("排序后:{}", Arrays.toString(array));
+    }
+
+    @DisplayName("产生范围测试数据 int[] ")
+    @ParameterizedTest
+    @ValueSource(ints = {10, 50})
+    void test202311151027(int arraySize) {
+        int[] array = IntStream.rangeClosed(1, arraySize).boxed().mapToInt(Integer::valueOf).toArray();
+        ArrayUtils.shuffle(array);
+        log.info("排序前：{}", Arrays.toString(array));
+        Arrays.sort(array);
+        log.info("排序后：{}", Arrays.toString(array));
     }
 
 }
