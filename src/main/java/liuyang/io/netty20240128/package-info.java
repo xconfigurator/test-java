@@ -4,6 +4,9 @@
  * 视频从1:34:57开始讲解Netty
  * 前面都是讲BIO, NIO, AIO
  *
+ * GitHub：
+ * git@github.com:bjmashibing/NettyStudy.git
+ *
  * @author xconf
  * @since 2024/1/28
  */
