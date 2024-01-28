@@ -8,8 +8,13 @@ import java.io.UnsupportedEncodingException;
 /**
  * JDK曾经也提供了实现，在sun.misc(rt.jar), 但在JDK 11后去除（估计是在JDK 9换JDK包结构的时候去掉的）。
  *
+ * GeekHour 5分钟 Base64简介
+ * https://www.bilibili.com/video/BV1hk4y1S7PJ/?spm_id_from=333.337.search-card.all.click&vd_source=8bd7b24b38e3e12c558d839b352b32f4
+ * echo "hello, world" | base64 | base64 -d
+ *
  * @since liuyang
  * @since 2022/2/15
+ *        2024/1/16 新增视频教程 5分钟
  */
 public class Base64Test {
 

@@ -2,7 +2,7 @@ package liuyang.essentials.math;
 
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.support.ExcelTypeEnum;
-import liuyang.tools.excel.easyexcel202208111703.LongitudeLatitudeBigDecimalDO;
+import liuyang.tools.excel.easyexcel.easyexcel202208111703.LongitudeLatitudeBigDecimalDO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;

@@ -200,7 +200,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.22.Final</version>
+            <version>4.1.105.Final</version>
         </dependency>
 
         <!-- XML begin ////////////////////////////////////////////////////////-->
@@ -245,11 +245,13 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>easyexcel</artifactId>
-            <version>2.2.7</version>
+            <!--<version>2.2.7</version>-->
+            <version>3.3.3</version>
         </dependency>
 
         <!-- bean validation begin 20230215 ////////////////////////////////-->
         <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <!-- 视频参考：https://www.bilibili.com/video/BV17i4y157Ah?p=5&spm_id_from=pageDriver&vd_source=8bd7b24b38e3e12c558d839b352b32f4 -->
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -292,6 +294,14 @@ SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorSta
             <version>4.0.1</version>
         </dependency>
         <!-- zookeeper end 20231003 //////////////////////////////////////-->
+
+        <!-- 二维码 -->
+        <!-- https://www.bilibili.com/video/BV1PH4y1U7jt/?spm_id_from=333.999.0.0&vd_source=8bd7b24b38e3e12c558d839b352b32f4 -->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>3.5.0</version>
+        </dependency>
 
 
         <!-- 不太常用的 begin //////////////////////////////////////////////-->
