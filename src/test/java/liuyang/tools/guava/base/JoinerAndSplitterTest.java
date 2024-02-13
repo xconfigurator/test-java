@@ -58,7 +58,7 @@ public class JoinerAndSplitterTest {
     @Test
     void testSplitter01() {
         String str = "1, 2, 3";
-        List<String> strings = Splitter.on(",").splitToList(str);
+        List<String> strings = Splitter.on(",").trimResults().splitToList(str);
         strings.forEach(System.out::println);
     }
 

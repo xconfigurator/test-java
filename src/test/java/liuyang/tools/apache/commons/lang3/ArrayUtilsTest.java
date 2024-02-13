@@ -29,6 +29,8 @@ public class ArrayUtilsTest {
     @DisplayName("添加元素")
     @Test
     void test202311082217() {
+        // System.arraycopy();
+
         int[] a = {1};
         a = ArrayUtils.add(a, 2);
         a = ArrayUtils.add(a, 3);

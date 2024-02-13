@@ -27,7 +27,9 @@ public class CollectionsTest {
     @Test
     void test202311080532() {
         Assertions.assertTrue(CollectionUtils.isEmpty(Collections.emptyList()));
+        Assertions.assertTrue(CollectionUtils.isEmpty(null));
         Assertions.assertTrue(MapUtils.isEmpty(new HashMap<>()));
+        Assertions.assertTrue(MapUtils.isEmpty(null));
     }
 
     @DisplayName("并、交、差")

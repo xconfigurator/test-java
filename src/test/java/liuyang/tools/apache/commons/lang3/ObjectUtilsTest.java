@@ -22,9 +22,10 @@ public class ObjectUtilsTest {
         log.info("{}", ObjectUtils.firstNonNull(arr));// 注意空串也是NonNull！
     }
 
-    @DisplayName("identityToString 貌似是Spring使用了这个")
+    @DisplayName("identityToString")
     @Test
     void test202311082202() {
+        // Spring中也使用了System.identityHashCode(obj);
         log.info("{}", ObjectUtils.identityToString("abc"));
     }
 }

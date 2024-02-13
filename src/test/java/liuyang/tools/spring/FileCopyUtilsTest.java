@@ -1,8 +1,6 @@
 package liuyang.tools.spring;
 
-import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.poi.sl.draw.binding.CTOfficeArtExtension;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.support.EncodedResource;

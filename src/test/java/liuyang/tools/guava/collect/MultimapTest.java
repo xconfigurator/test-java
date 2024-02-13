@@ -4,6 +4,7 @@ import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.TreeMultimap;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collection;
@@ -12,17 +13,28 @@ import java.util.Map;
 /**
  * https://www.bilibili.com/video/BV1Lv411P7Ua/?p=7&vd_source=8bd7b24b38e3e12c558d839b352b32f4
  *
+ * Map<String, Collection<String>> map;
+ *
  * @author xconf
  * @since 2023/11/9
  */
 @Slf4j
 public class MultimapTest {
+    @DisplayName("Map<String, Collection<String>> map")
     @Test
     void testHashMultimap() {
         // 一个键存多个值
         Multimap<Integer, String> multimap = HashMultimap.<Integer, String>create();
         multimap.put(1, "foo");
         multimap.put(1, "bar");
+        multimap.put(1, "foo");
+        multimap.put(1, "bar");
+        multimap.put(1, "foo");
+        multimap.put(1, "bar");
+        multimap.put(1, "foo");
+        multimap.put(1, "bar");
+        multimap.put(1, "foo2");
+        multimap.put(1, "bar2");
         multimap.put(2, "liuyang");
         System.out.println(multimap);
 
@@ -40,6 +52,7 @@ public class MultimapTest {
         // 注2：好像Multiset并没有对应方法。不过Multiset底层是一个Map<E, count>结构来实现的。
     }
 
+    @DisplayName("Map<String, Collection<String>> map")
     @Test
     void testTreeMultimap() {
         // 一个键存多个值

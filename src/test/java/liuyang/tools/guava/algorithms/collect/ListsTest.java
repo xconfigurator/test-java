@@ -1,14 +1,9 @@
 package liuyang.tools.guava.algorithms.collect;
 
 import com.google.common.collect.Lists;
-
-import com.google.common.collect.Sets;
-
-import lombok.val;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -37,10 +32,4 @@ public class ListsTest {
         List<List<Integer>> partition = Lists.partition(collect, 20);
         partition.forEach(System.out::println);// 哇呜哦!
     }
-
-    @Test
-    void testSets() {
-        //Sets
-    }
-
 }

@@ -2,6 +2,7 @@ package liuyang.tools.spring;
 
 import liuyang.essentials.springessentials.annotation.Student;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.ReflectionUtils;
 
@@ -16,6 +17,7 @@ import org.springframework.util.ReflectionUtils;
 @Slf4j
 public class ReflectionUtilsTest {
 
+    @DisplayName("不包含继承的信息")
     @Test
     void test202311090616Local() {
         // 字段
@@ -28,6 +30,7 @@ public class ReflectionUtilsTest {
         });
     }
 
+    @DisplayName("包含继承的信息")
     @Test
     void test202311090617All() {
         // 字段
