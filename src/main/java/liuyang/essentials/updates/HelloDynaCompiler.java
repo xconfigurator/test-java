@@ -1,4 +1,4 @@
-package liuyang.essentials;
+package liuyang.essentials.updates;
 
 import java.io.BufferedReader;
 import java.io.IOException;

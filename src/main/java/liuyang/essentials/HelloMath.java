@@ -1,4 +1,4 @@
-package liuyang.essentials.lang;
+package liuyang.essentials;
 
 public class HelloMath {
 

@@ -1,6 +1,6 @@
-package liuyang.essentials.lang;
+package liuyang.essentials;
 
-public class TestString {
+public class HelloString {
 	
 	public static void main(String[] args) {
 		

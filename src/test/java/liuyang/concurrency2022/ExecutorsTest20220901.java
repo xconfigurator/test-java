@@ -18,6 +18,17 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class ExecutorsTest20220901 {
 
+    @Test
+    void foo() throws InterruptedException {
+        Thread thread = new Thread(() -> {
+            for (;;);
+        });
+        thread.setDaemon(true);
+        thread.start();
+
+        TimeUnit.SECONDS.sleep(10);
+    }
+
     // 如果delay是0会怎样？
     // 答：立即执行。
     @Test

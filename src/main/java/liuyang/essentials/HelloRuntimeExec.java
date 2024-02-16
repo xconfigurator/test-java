@@ -1,4 +1,4 @@
-package liuyang.essentials.lang;
+package liuyang.essentials;
 
 import java.io.BufferedReader;
 import java.io.IOException;

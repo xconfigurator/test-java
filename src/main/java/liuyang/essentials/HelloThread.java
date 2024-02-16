@@ -1,6 +1,9 @@
-package liuyang.essentials.lang;
+package liuyang.essentials;
 
-public class HelloRunnable {
+/**
+ * 详见liuyang.concurrency*包示例
+ */
+public class HelloThread {
 
 	public static void main(String[] args) {
 
