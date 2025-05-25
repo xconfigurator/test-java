@@ -3,6 +3,7 @@ package liuyang.update17;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -14,14 +15,17 @@ import org.junit.jupiter.api.Test;
  *
  * Record不能替代JavaBean
  *
+ *
+ *
  * @author xconf
  * @since 2023/11/4
+ * @update 2024/2/19    https://www.bilibili.com/video/BV1Km4y1k7bn/?p=7&vd_source=8bd7b24b38e3e12c558d839b352b32f4
  */
 @Slf4j
 public class Record16Test {
 
     @Test
-    void test() {
+    void test202311040000() {
         // 引用数据类型：数组、类、接口、Enum、Annotation、Record（IntelliJ New Java Class中列出的都是引用数据类型。）
 
         @AllArgsConstructor
@@ -38,5 +42,24 @@ public class Record16Test {
         }
         OrderNew orderNew = new OrderNew(1, "orderNew");
         System.out.println(orderNew);
+    }
+
+
+    // 视频参考 https://www.bilibili.com/video/BV1Km4y1k7bn/?p=7&vd_source=8bd7b24b38e3e12c558d839b352b32f4
+    @Test
+    void test202402192113() {
+        record Student(Integer id, String name, String email, Integer age){}
+
+        Student foo = new Student(1, "foo", "foo@163.com", 40);
+        Student bar = new Student(2, "bar", "bar@163.com", 40);
+        Student foo2 = new Student(1, "foo", "foo@163.com", 40);// 属性与foo完全相同
+
+        // 没有get set
+        log.info("id = {}, name = {}", foo.id, foo.name);
+        log.info("id = {}, name = {}", bar.id(), bar.name());
+
+        // equals
+        Assertions.assertFalse(foo.equals(bar));
+        Assertions.assertTrue(foo.equals(foo2));// foo  foo2属性完全相同
     }
 }
